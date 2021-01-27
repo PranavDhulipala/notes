@@ -87,3 +87,4 @@ replace the <name> in the below command with the name of your ipvlan docker netw
 ```
 docker run --net=<name> --ip=192.168.0.32 -it --rm <container_name>
 ```
+Add the ipvlan setup as a startup script on boot so that the setup persists after reboot.
