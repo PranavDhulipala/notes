@@ -77,4 +77,12 @@ Use the following command to delete a network from docker
 ```
 docker network rm <name>
 ```
+Test the above setup by building and running a container in docker
 
+```
+docker build -t <container_name> .
+```
+
+```
+docker run --net=<name> --ip=192.168.0.32 -it --rm <container_name>
+```
