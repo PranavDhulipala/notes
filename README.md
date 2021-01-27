@@ -82,7 +82,8 @@ Test the above setup by building and running a container in docker
 ```
 docker build -t <container_name> .
 ```
-
+replace the <name> in the below command with the name of your ipvlan docker network which was created previously. 
+    
 ```
 docker run --net=<name> --ip=192.168.0.32 -it --rm <container_name>
 ```
